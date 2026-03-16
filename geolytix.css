@@ -166,6 +166,12 @@ section.lead footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+section.lead blockquote {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--color-active);
+}
+
 /* Invert class */
 section.invert {
     background-color: var(--color-font);
