@@ -1,0 +1,242 @@
+/* @theme geolytix */
+/*
+Geolytix theme for Marp
+Uses the Geolytix brand palette and Titillium Web font
+*/
+
+@import "default";
+@import "schema";
+@import "structure";
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+    --color-primary: #003d57;
+    --color-base: #f2f2f2;
+    --color-base-secondary: #f7f7f7;
+    --color-base-tertiary: #fafafa;
+    --color-border: #dddddd;
+    --color-font: #3f3f3f;
+    --color-font-mid: #858585;
+    --color-font-contrast: #ffffff;
+    --color-active: #d57120;
+    --color-hover: #939faa;
+    --color-changed: #ffffa7;
+    --color-info: #0b6f50;
+    --color-danger: #a21309;
+
+    font-family: "Titillium Web", ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+        "Noto Color Emoji";
+    font-weight: initial;
+
+    background-color: var(--color-base);
+}
+
+/* Common styles */
+section {
+    background-color: var(--color-base);
+    color: var(--color-font);
+}
+
+h1 {
+    color: var(--color-primary);
+    padding-bottom: 2mm;
+    margin-bottom: 12mm;
+    border-bottom: 2px solid var(--color-active);
+}
+h2 {
+    color: var(--color-primary);
+}
+h3 {
+    color: var(--color-primary);
+}
+h4 {
+    color: var(--color-primary);
+}
+h5 {
+    color: var(--color-primary);
+}
+h6 {
+    color: var(--color-primary);
+}
+a {
+    color: var(--color-active);
+}
+a:hover {
+    color: var(--color-hover);
+}
+p {
+    font-size: 20pt;
+    font-weight: 400;
+    color: var(--color-font);
+}
+code {
+    color: var(--color-primary);
+    background-color: var(--color-base-secondary);
+}
+ul {
+    color: var(--color-font);
+}
+li {
+    color: var(--color-font);
+}
+img {
+    background-color: var(--color-base-tertiary);
+}
+strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+em {
+    color: var(--color-font-mid);
+}
+blockquote {
+    border-left: 4px solid var(--color-active);
+    color: var(--color-font-mid);
+    background-color: var(--color-base-secondary);
+}
+table {
+    border-collapse: collapse;
+}
+table th {
+    background-color: var(--color-primary);
+    color: var(--color-font-contrast);
+    font-weight: 600;
+}
+table td {
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-font);
+}
+table tr:nth-child(even) {
+    background-color: var(--color-base-secondary);
+}
+mjx-container {
+    color: var(--color-font);
+}
+marp-pre {
+    background-color: var(--color-base-secondary);
+    border: 1px solid var(--color-border);
+}
+header {
+    color: var(--color-font-mid);
+    font-size: 14pt;
+}
+footer {
+    color: var(--color-font-mid);
+    font-size: 14pt;
+}
+
+/* Lead / title slide */
+section.lead {
+    background-color: var(--color-primary);
+    color: var(--color-font-contrast);
+}
+section.lead h1 {
+    color: var(--color-font-contrast);
+    border-bottom-color: var(--color-active);
+}
+section.lead h2,
+section.lead h3,
+section.lead h4,
+section.lead h5,
+section.lead h6 {
+    color: var(--color-font-contrast);
+}
+section.lead p {
+    color: var(--color-font-contrast);
+}
+section.lead a {
+    color: var(--color-active);
+}
+section.lead strong {
+    color: var(--color-active);
+}
+section.lead ul,
+section.lead li {
+    color: var(--color-font-contrast);
+}
+section.lead code {
+    color: var(--color-font-contrast);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+section.lead header,
+section.lead footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Invert class */
+section.invert {
+    background-color: var(--color-font);
+    color: var(--color-font-contrast);
+}
+section.invert h1,
+section.invert h2,
+section.invert h3,
+section.invert h4,
+section.invert h5,
+section.invert h6 {
+    color: var(--color-font-contrast);
+}
+section.invert h1 {
+    border-bottom-color: var(--color-active);
+}
+section.invert p {
+    color: var(--color-font-contrast);
+}
+section.invert ul,
+section.invert li {
+    color: var(--color-font-contrast);
+}
+section.invert strong {
+    color: var(--color-active);
+}
+section.invert code {
+    color: var(--color-font-contrast);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Code block syntax highlighting */
+.hljs-comment {
+    color: var(--color-font-mid);
+}
+.hljs-attr {
+    color: var(--color-info);
+}
+.hljs-punctuation {
+    color: var(--color-font);
+}
+.hljs-string {
+    color: var(--color-active);
+}
+.hljs-title {
+    color: var(--color-info);
+}
+.hljs-keyword {
+    color: var(--color-primary);
+}
+.hljs-variable {
+    color: var(--color-font);
+}
+.hljs-literal {
+    color: var(--color-danger);
+}
+.hljs-type {
+    color: var(--color-danger);
+}
+.hljs-number {
+    color: var(--color-active);
+}
+.hljs-built_in {
+    color: var(--color-danger);
+}
+.hljs-params {
+    color: var(--color-info);
+}
+.hljs-symbol {
+    color: var(--color-info);
+}
+.hljs-meta {
+    color: var(--color-font-mid);
+}
