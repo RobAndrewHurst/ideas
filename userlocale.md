@@ -1,31 +1,22 @@
 ---
-theme: rose-pine
+theme: geolytix
 _class: lead
 paginate: true
 __backgroundColor: #fff
 __backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
-<!-- ![bg left:40% 80%](https://marp.app/assets/marp.svg) -->
+![bg left:40% 80%](https://marp.app/assets/marp.svg)
 
-# **Custom Locales**
+# **Mach-xyz**
 
 What are we trying to solve?
+
+- Less deployments :rocket:
+- Less bugs :bug:
 
 ---
 
 # What do we already have?
 
-Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
-
-```markdown
-# Slide 1
-
-foobar
-
----
-
-# Slide 2
-
-foobar
-```
+> **Tip:** Use blockquotes for callouts and tips.
