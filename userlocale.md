@@ -91,6 +91,27 @@ section * {
 
 > developed by Dennis to save away a locale objects for a user.
 
+```json
+{
+  "templates": ["osm"],
+  "layers": {
+    "osm": {
+      "template": "osm"
+    },
+    "scratch": {
+      "name": "Scratch (UK)",
+      "template": {
+        "key": "scratch_one",
+        "src": "${CLIENT}/roles/scratch.json"
+      }
+    }
+  }
+}
+```
+---
+
+# Dynamic Locales (UserLocales)
+
 | Pros ✅ | Cons ❌|
 |------|------|
 | Locales for different users/clients | Potential for divergent configurations |
