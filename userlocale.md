@@ -46,12 +46,12 @@ workspace
 ├── locale
 │   └── layers:{}
 └── locales:{}
-    └── roles
+    └── role
     └── layers{}
-        └── roles
+        └── role
 ```
 
-> **Note:** Most objects and arrays can have roles
+> **Note:** Most objects and arrays can have a role
 
 ---
 
