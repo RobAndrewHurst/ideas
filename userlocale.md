@@ -19,6 +19,7 @@ h1 {
 ![bg grayscale:1](./assets/backgrounds/overlay-pink.png)
 
 <!-- _class: lead -->
+<!-- _paginate: false -->
 
 # Mapp Next
 
@@ -159,6 +160,9 @@ section * {
 
 ---
 
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
 <style scoped>
 section * {
   text-align: center;
@@ -169,6 +173,5 @@ h1 {
 }
 </style>
 
-<!-- _class: lead -->
 
 # Thanks oakes 🌲
