@@ -129,3 +129,9 @@ section * {
 - Assign said locale to users based on their role
   - (And even allow them to be extended)
 - Changes on shared Templates/Product reflect easily
+
+---
+
+# Admin Journey?
+
+![]('./assets/di')
