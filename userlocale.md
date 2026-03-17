@@ -73,13 +73,59 @@ section * {
 
 - Shared templates (data driven)
 - Role levels (accessible)
-- Dynamic Locales (Turn Key)
-- All in one repo (Robust)
+- Dynamic/User Locales (Turn Key)
+- Mono repo (Robust)
 
 ---
 
-# One repo (Robust)
+# Mono repo (Robust)
 
 - Single source of truth
 - ++ Dev ex
 - Better testing
+- Automation
+
+---
+
+# Dynamic Locales (UserLocales)
+
+> developed by Dennis to save away a locale objects for a user.
+
+| Pros ✅ | Cons ❌|
+|------|------|
+| Locales for different users/clients | Potential for divergent configurations |
+| On the fly creation | Requires developer/user discipline to maintain |
+| Can be used to package data products |  |
+| Turn key solution | |
+| Less Deployments | |
+
+---
+
+# Shared Templates (Sub Module)
+
+- Already in place
+- Configurations are all driven by product/data
+- It is a catalog
+
+---
+
+# Roles
+
+- Already in place
+- nested (n) (Tree 🎄)
+  - locale --> template --> object
+
+> $$
+> n^n
+> $$
+
+---
+
+# How can this all fit? (Mapp Next)
+
+- Providing a catalog of data to the user
+  - via a plugin or some core functionality.
+- Create a Dynamic Locale from this catalog of data
+- Assign said locale to users based on their role
+  - (And even allow them to be extended)
+- Changes on shared Templates/Product reflect easily
