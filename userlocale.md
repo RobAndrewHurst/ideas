@@ -132,6 +132,22 @@ section * {
 
 ---
 
+![bg right width:625px](./assets/Diagrams/admin-journey.png)
+
 # Admin Journey?
 
-![]('./assets/di')
+---
+
+<style scoped>
+section * {
+  text-align: center;
+  font-size: 100px
+}
+h1 {
+  border-bottom: none !important;
+}
+</style>
+
+<!-- _class: lead -->
+
+# Thanks oakes 🌲
