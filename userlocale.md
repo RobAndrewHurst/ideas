@@ -42,9 +42,12 @@ section code {
 
 ```bash
 workspace
-├── templates
-└── locale(s)
-    └── layers
+├── templates:{}
+├── locale
+│   └── layers:{}
+└── locales:{}
+    └── roles
+    └── layers{}
         └── roles
 ```
 
